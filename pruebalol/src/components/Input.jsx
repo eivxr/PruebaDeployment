@@ -7,7 +7,8 @@ export const Input = () => {
   const [value,setValue] = useState(''); 
 
   const handleChange = (event) =>{
-    setValue(event.target.value);
+    const mayus = event.target.value.toUpperCase();
+    setValue(mayus);
   };
     
   const handleConfirm = (event)  =>{
